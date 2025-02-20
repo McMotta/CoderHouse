@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Pinturas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Tienda de Pinturas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Pinturas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+          <div class="hero-overlay d-flex align-items-center justify-content-center">
+              <div class="container text-center text-white">
+                  <h1 class="display-4 fw-bold mb-4">Descubre el color perfecto para tu hogar</h1>
+                  <a href="#pinturas" class="btn btn-warning btn-lg">Ver Pinturas</a>
+              </div>
+          </div>
+      </section>
+
+        <!-- Servicios Section -->
+        <section id="servicios" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Servicios</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/un pintor haciendo una obra.png" class="card-img-top" alt="Cuadros por encargo">
+                            <div class="card-body">
+                                <h3 class="card-title">Cuadros por encargo</h3>
+                                <p class="card-text">	Nuestros retratos por encargo son obras de arte personalizadas que capturan la esencia y personalidad de quienes más te importan. Mediante una colaboración cercana, transformamos tus recuerdos y emociones en una representación visual única y significativa. Cada retrato es una pieza exclusiva, diseñada para ofrecerte una conexión emocional profunda y duradera, ideal para adornar tu hogar o como un regalo especial que será apreciado para siempre.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/una persona haciendo un retrato de otra persona.png" class="card-img-top" alt="Retratos">
+                            <div class="card-body">
+                                <h3 class="card-title">Retratos</h3>
+                                <p class="card-text">Nuestros retratos por encargo son obras de arte personalizadas que capturan la esencia y personalidad de quienes más te importan. Mediante una colaboración cercana, transformamos tus recuerdos y emociones en una representación visual única y significativa. Cada retrato es una pieza exclusiva, diseñada para ofrecerte una conexión emocional profunda y duradera, ideal para adornar tu hogar o como un regalo especial que será apreciado para siempre.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/una persona enseñando a pintar a otra persona, realista.png" class="card-img-top" alt="Clases de pintura">
+                            <div class="card-body">
+                                <h3 class="card-title">Clases de pintura</h3>
+                                <p class="card-text">Nuestras clases de pintura por encargo están diseñadas para ofrecer una experiencia de aprendizaje personalizada y enriquecedora. Ya sea que seas un principiante o un artista avanzado, adaptamos nuestras lecciones para satisfacer tus necesidades y ayudarte a desarrollar tu estilo propio. Cada clase es una oportunidad para explorar técnicas, mejorar habilidades y descubrir nuevas formas de expresión artística en un ambiente creativo y motivador. Además, tendrás la oportunidad de trabajar en proyectos personalizados que reflejen tus intereses y aspiraciones artísticas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pinturas Section -->
+        <section id="pinturas" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestras Pinturas</h2>
+                <div id="carouselPinturas" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/Juan-Gris-cubism-1140x760.jpg" class="d-block w-100" alt="Pintura 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/OIP (1).jpeg" class="d-block w-100" alt="Pintura 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/OIP (2).jpeg" class="d-block w-100" alt="Pintura 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPinturas" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPinturas" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exhibiciones Section -->
+        <section id="exhibiciones" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Exhibiciones y Eventos</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="/assets/un poster de un evento de galería de arte.png" alt="Póster del evento" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="mb-4">Exhibición de Pinturas Modernas</h3>
+                        <p><strong>Fecha:</strong> 15 de Enero, 2024</p>
+                        <p><strong>Hora:</strong> 7:00 PM</p>
+                        <p><strong>Sitio:</strong> Galería de Arte Local, Bogotá</p>
+                        <p><strong>Precio de Entrada:</strong> $20.000 COP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Contacto</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h3 class="mb-4">Información de Contacto</h3>
+                        <p><strong>Dirección:</strong> Calle Ficticia 123, Oficina 456</p>
+                        <p><strong>Ciudad:</strong> Bogotá, Colombia</p>
+                        <p><strong>Teléfono:</strong> +57 123 456 789</p>
+                        <p><strong>Correo:</strong> contacto@tiendapinturas.com</p>
+                        <div class="mt-4">
+                            <a href="#" class="me-3"><img src="ruta/a/icono-facebook.png" alt="Facebook" width="30"></a>
+                            <a href="#" class="me-3"><img src="ruta/a/icono-twitter.png" alt="Twitter" width="30"></a>
+                            <a href="#" class="me-3"><img src="ruta/a/icono-instagram.png" alt="Instagram" width="30"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Tienda de Pinturas. Todos los derechos reservados.</p>
+            <div class="mt-3">
+                <a href="#" class="text-white me-3">Inicio</a>
+                <a href="#servicios" class="text-white me-3">Servicios</a>
+                <a href="#pinturas" class="text-white me-3">Pinturas</a>
+                <a href="#blog" class="text-white me-3">Blog</a>
+                <a href="#contacto" class="text-white">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

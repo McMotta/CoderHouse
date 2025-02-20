@@ -1,0 +1,17 @@
+.card {
+    @extend %card-base;
+    
+    &:hover {
+      transform: translateY(-5px);
+      transition: transform map-get($transitions, 'normal') ease;
+    }
+    
+    &__title {
+      font-size: 1.5rem;
+      color: map-get($colors, 'primary');
+    }
+    
+    &__content {
+      margin-top: 1rem;
+    }
+  }

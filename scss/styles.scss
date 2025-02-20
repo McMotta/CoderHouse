@@ -1,0 +1,97 @@
+// Importar primero las variables y mixins ya que otras hojas de estilo dependerán de ellos
+@import 'base/variables';
+@import 'mixins/responsive';
+@import 'mixins/flex';
+
+// Reset y estilos base
+@import 'base/reset';
+
+// Componentes de layout (estructura principal)
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/footer';
+
+// Componentes individuales
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/carousel';
+
+// Variables
+$primary-color: #3498DB;
+$secondary-color: #2C3E50;
+$accent-color: #F1C40F;
+$text-light: #ECF0F1;
+$background-light: #F4F4F4;
+$white: #FFFFFF;
+$card-border-radius: 10px;
+$transition-duration: 0.3s;
+
+// Estilos globales que afectan a toda la página
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: map-get($colors, 'dark');
+    background-color: map-get($colors, 'light');
+  }
+  
+  // Clases de utilidad globales
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .section {
+    padding: 4rem 0;
+    
+    &--small {
+      padding: 2rem 0;
+    }
+    
+    &--large {
+      padding: 6rem 0;
+    }
+  }
+  
+  // Helpers de espaciado
+  .mt-1 { margin-top: 1rem; }
+  .mb-1 { margin-bottom: 1rem; }
+  .py-1 { padding: 1rem 0; }
+  .px-1 { padding: 0 1rem; }
+  
+  // Clases de alineación
+  .text-center { text-align: center; }
+  .text-right { text-align: right; }
+  .text-left { text-align: left; }
+  
+  // Clases de visualización
+  .d-none { display: none; }
+  .d-block { display: block; }
+  .d-flex { display: flex; }
+  
+  // Media queries globales
+  @include responsive('md') {
+    .d-md-none { display: none; }
+    .d-md-block { display: block; }
+    .d-md-flex { display: flex; }
+  }
+  
+  // Animaciones globales
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in forwards;
+  }
+  
+  .slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 0.5s ease-out forwards;
+  }
+  
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

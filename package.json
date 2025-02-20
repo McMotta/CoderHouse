@@ -1,0 +1,29 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/styles.scss css/style.css --watch",
+    "sass:watch": "sass --watch scss/styles.scss css/style.css",
+    "build": "sass scss/styles.scss css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McMotta/CoderHouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McMotta/CoderHouse/issues"
+  },
+  "homepage": "https://github.com/McMotta/CoderHouse#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
