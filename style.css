@@ -1,36 +1,76 @@
-/* Estilos personalizados */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
 
 /* Hero Section */
 .hero-section {
   background-image: url('./assets/un\ pintor\ haciendo\ una\ obra.png');
-  background-size: cover;
-  height: 87vh;
+  background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* Altura completa de la pantalla */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  position: relative; /* Permite posicionar elementos dentro del hero */
 }
 
 .hero-overlay {
   position: absolute;
-  top: 88px;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: -2.5px;
-  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  z-index: 1; /* Coloca el overlay encima de la imagen */
 }
 
 .hero-section h1 {
   font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 2; /* Coloca el texto encima del overlay */
 }
 
-/* Servicios Section */
-.card-img-top {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3498DB; /* Azul vibrante */
+  color: white;
 }
 
-.card-text {
-  text-align: justify;
+header .logo img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #F1C40F; /* Amarillo vibrante */
 }
 
 /* Pinturas Section */
@@ -39,44 +79,125 @@
   object-fit: contain;
 }
 
-/* Exhibiciones Section */
-#exhibiciones img {
-  max-height: 400px;
-  object-fit: contain;
+/* Estilos para secciones principales */
+main {
+  background-color: #F4F4F4; /* Fondo gris claro */
+  text-align: center;
 }
 
-/* Contacto Section */
-#contacto img {
-  width: 30px;
-  height: 30px;
+main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 
-/* Responsive */
+/* Servicios Section */
+.card-img-top {
+  height: 120px;
+  width: 100%;
+  object-position: top;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+/* Estilos para tarjetas (servicios, productos, blog, etc.) */
+.card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de ampliación */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #3498DB; /* Color del título */
+  margin-bottom: 10px;
+}
+
+.card .precio {
+  font-size: 1.6rem;
+  color: #2C3E50; /* Color del precio */
+  margin-bottom: 20px;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498DB;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+  background-color: #2980B9;
+}
+
+/* Estilos para grillas de productos */
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Estilos para videos e imágenes en el blog */
+.ratio-16x9 iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2C3E50; /* Fondo oscuro */
+  color: #ECF0F1; /* Texto claro */
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ECF0F1;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #F1C40F; /* Amarillo vibrante */
+}
+
+/* Diseño responsive */
 @media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2rem;
-    
+  .productos-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
-  .carousel-item img {
-    height: 300px;
+  .carousel-item {
+    height: 300px; /* Reduce la altura en pantallas pequeñas */
   }
-
-  #exhibiciones img {
-    max-height: 300px;
-  }
-}
-
-/* Animaciones y transiciones */
-.nav-link,
-.btn,
-a {
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover,
-.btn:hover {
-  transform: translateY(-2px);
 }
 
 /* Estilos adicionales para mejorar la apariencia */
