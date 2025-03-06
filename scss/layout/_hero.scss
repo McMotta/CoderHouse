@@ -1,0 +1,31 @@
+// _hero.scss
+@use '../variables' as variables;
+
+.hero-section {
+    background-image: url("/assets/un\ pintor\ haciendo\ una\ obra.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
+h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: variables.$white;
+        z-index: 2;
+    }

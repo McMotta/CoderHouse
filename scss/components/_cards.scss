@@ -1,17 +1,40 @@
+// _cards.scss
+@use '../variables' as variables;
+
+
 .card {
-    @extend %card-base;
-    
-    &:hover {
+  background-color: variables.$white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: variables.$card-shadow;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
       transform: translateY(-5px);
-      transition: transform map-get($transitions, 'normal') ease;
-    }
-    
-    &__title {
-      font-size: 1.5rem;
-      color: map-get($colors, 'primary');
-    }
-    
-    &__content {
-      margin-top: 1rem;
-    }
   }
+
+  img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      object-fit: cover;
+  }
+
+  .precio {
+      font-size: 1.6rem;
+      color: variables.$secondary-color;
+      margin-bottom: 20px;
+  }
+
+  .card-text {
+      text-align: justify;
+  }
+}
+
+.card-img-top {
+  height: 120px;
+  width: 100%;
+  object-position: top;
+}

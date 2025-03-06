@@ -1,0 +1,19 @@
+// _carousel.scss
+
+.carousel-item {
+    height: 500px; // Ajusta este valor según el tamaño deseado
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: none;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+}

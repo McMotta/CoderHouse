@@ -1,0 +1,13 @@
+// _typography.scss
+@use '../variables' as variables;
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: variables.$primary-color;
+    margin-bottom: 10px;
+}

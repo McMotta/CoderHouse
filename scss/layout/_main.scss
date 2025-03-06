@@ -1,0 +1,6 @@
+// _main.scss
+@use '../variables' as variables;
+main {
+    background-color: variables.$light-bg;
+    text-align: center;
+}

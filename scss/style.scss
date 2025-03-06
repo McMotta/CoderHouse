@@ -1,0 +1,13 @@
+// scss/style.scss
+@use 'variables' as variables;
+@use 'base/reset' as *;
+@use 'base/typography' as *;
+@use 'mixins/breakpoints' as *;
+@use 'mixins/shadows' as *;
+@use 'layout/header' as *;
+@use 'layout/footer' as *;
+@use 'layout/main' as *;
+@use 'layout/hero' as *;
+@use 'components/buttons' as *;
+@use 'components/cards' as *;
+@use 'components/carousel' as *;

@@ -1,0 +1,20 @@
+// _footer.scss
+@use '../variables' as variables;
+footer {
+    background-color: variables.$dark-bg;
+    color: #ECF0F1;
+    padding: 30px 20px;
+    text-align: center;
+
+    a {
+        color: #ECF0F1;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1rem;
+        transition: color 0.3s;
+
+        &:hover {
+            color: variables.$accent-color;
+        }
+    }
+}
