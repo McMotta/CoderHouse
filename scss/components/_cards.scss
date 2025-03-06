@@ -22,17 +22,21 @@
       object-fit: cover;
   }
 
-  .precio {
-      font-size: 1.6rem;
-      color: variables.$secondary-color;
-      margin-bottom: 20px;
-  }
-
   .card-text {
       text-align: justify;
   }
-}
 
+  .card-text2 {
+    margin: 50px;
+    text-align: center;
+  }	
+
+  .card-text3 {
+    margin: 10px;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
 .card-img-top {
   height: 120px;
   width: 100%;
